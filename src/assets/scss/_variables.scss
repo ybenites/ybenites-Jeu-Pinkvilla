@@ -1,0 +1,15 @@
+$primary-color: #26a69a !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: #426ba4 !default;
+$loading-color: $primary-color-light !default;
+$success-color: #4CAF50 !default;
+$error-color: #F44336 !default;
+
+// breakpoints
+
+$breakpoint-small:576px;
+$breakpoint-medium:768px;
+$breakpoint-large:992px;
+$breakpoint-extra-large:1200px;

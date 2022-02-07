@@ -1,0 +1,40 @@
+@import "~nprogress/nprogress.css";
+
+
+#nprogress .bar {
+    background: $loading-color;
+    height: 5px;
+}
+#nprogress .peg {
+    box-shadow: 0 0 10px $loading-color, 0 0 5px $loading-color !important;
+}
+#nprogress .spinner{
+    margin: 0 auto;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transform: none;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #nprogress .spinner-icon {
+        border-top-color: $loading-color;
+        border-left-color: $loading-color;
+    }
+}
+  
+// css animations
+.fade-enter-active {
+    transition: opacity .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-leave-active {
+    transition: opacity .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-enter, .fade-leave-to{
+    opacity: 0;
+  }
